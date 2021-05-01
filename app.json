@@ -17,13 +17,18 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "co.nucamp.nucampsite.student",
+      "buildNumber": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+        "backgroundColor": "#FFFFFF",
+        "package": "co.nucamp.nucampsite.student",
+        "versionCode": 1
+      },
+      "package": "co.nucamp.nucampsite.student"
     },
     "web": {
       "favicon": "./assets/favicon.png"

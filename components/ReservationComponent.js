@@ -21,7 +21,6 @@ class Reservation extends Component {
       hikeIn: false,
       date: new Date(),
       showCalendar: false,
-      showModal: false,
     };
   }
 
@@ -29,13 +28,8 @@ class Reservation extends Component {
     title: "Reserve Campsite",
   };
 
-  toggleModal() {
-    this.setState({ showModal: !this.state.showModal });
-  }
-
   handleReservation() {
     console.log(JSON.stringify(this.state));
-    this.toggleModal();
 
     let message =
       `Number of Campers: ${this.state.campers}\n\n` +
@@ -70,7 +64,6 @@ class Reservation extends Component {
       hikeIn: false,
       date: new Date(),
       showCalendar: false,
-      showModal: false,
     });
   }
 
